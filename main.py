@@ -20,7 +20,7 @@ client = tweepy.Client(consumer_key=secret.api_key,
 
 #Tweeting
 for n in range(0, len(selected_stocks)):
-    txt = f'{selected_stocks[n]}: Cotação do dia {day}: {stock_price[n]:.2f}'
+    txt = f'{selected_stocks[n]}: Prices of {day}: {stock_price[n]:.2f}'
     respo = client.create_tweet(text=txt)
     print(respo)
    
